@@ -484,6 +484,7 @@ footer p{
   .invitados{
     display: block;
     padding: 20px;
+    justify-content: center;
   }
   .familia{
    
