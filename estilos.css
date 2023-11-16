@@ -171,12 +171,6 @@ font-weight: 700;
 
 header{
   background-image: url(img/fondo.jpg);
-  /* background: linear-gradient(to bottom,
-  rgba(211,135,20, .6),
-  rgba(29,241,171, .6),
-  rgba(7,109,150, .45)
-  ) ; 
-  */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -294,8 +288,9 @@ color: #1900ff;
 }
 .about{
   background: url(img/img2.jpg);
-  background-attachment:inherit;
-   background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   height: 800px;
   min-height: 800px;
   align-items: center;
@@ -310,8 +305,9 @@ color: #1900ff;
 }
 #equipo, #trabajo{
   background: url(img/about.jpg);
+  background-attachment: fixed;
   background-position: center;
-  background-size: COVER;
+  background-size: cover;
   padding-top: 250px;
 }
 .caja-servicios{
@@ -394,7 +390,6 @@ footer{
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-size: 100%;
 text-shadow:2px 2px 2px #dc143c !important;
 color: #fff !important;
 }
@@ -450,11 +445,11 @@ footer p{
     overflow: hidden;
   }
   #equipo, #trabajo{
-    background: url(img/about_min.jpg);
+    background: url(fondo_verical.jpg);
+    background-attachment: fixed;
     background-position: center;
-    background-size: COVER;
-    padding-top: 200px;
-    
+    background-size: cover;
+    padding-top: 250px;
   }
   .enlaces a{
     display: block;
@@ -521,12 +516,7 @@ footer p{
   .content-card{
     width: 90%;
   }
-  #equipo, #trabajo{
-    background: url(about_min.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-top: 50px !important;
-  }
+ 
   .caja-servicios{
     width: 90%;
     margin-bottom: var(--margenes);
@@ -570,6 +560,13 @@ margin: 15px auto;
       justify-content: center;
       align-items: center;
       margin-top: 60px;
+    }
+    #equipo, #trabajo{
+      background: url(img/fondo_verical.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      padding-top: 250px;
     }
 }
 a.linkmaps{
