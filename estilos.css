@@ -206,31 +206,36 @@ header{
   text-align: center;
 }
 
-.textos>h1{font-size:80px;;}
+.textos>h1{font-size:80px;
+  font-family: "Allura", belleza;
+}
 
-.textos>h2{font-size: 30px; font-weight: 300;}
+.textos>h2{font-size: 30px; font-weight: 300; font-family: "Allura", belleza;}
 
 /* Main */
 
 .contenedor{
   margin:auto;
   padding: var(--margenes) 0;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
   text-align: center;
   overflow: hidden;
+  min-height: 800px;
 }
 
-.contenedor h3{
+.contenedor h3, h2{
   font-size: var(--titulos);
   color: var(--color1);
   margin-bottom: var(--espacios);
+  font-family: "Allura", belleza;
+  color: #dc143c;
 }
 
 .contenedor p{
   font-size: 30px;
   font-weight: 300;
-color: #ff7f50;
+color: #1900ff;
+
 }
 .invitados{
   display: flex;
@@ -249,7 +254,7 @@ color: #ff7f50;
   height: 2px;
   background: var(--color1);
   margin-bottom: var(--espacios-contenido);
-  color: #fff;
+  color: #fff !important;
 }
 
 .card{
@@ -281,16 +286,19 @@ color: #ff7f50;
   padding: var(--espacios) 0;
   color: #dc143c !important;
 }
-
-.about{
+.team{
   background: url(img/img2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+.about{
+  background: url(img/img2.jpg);
+  background-attachment:inherit;
+   background-size:cover;
   height: 800px;
-  min-height: 300px;
+  min-height: 800px;
   align-items: center;
-  width: 100%;
 }
 
 .servicios{
@@ -299,6 +307,12 @@ color: #ff7f50;
   justify-content: space-between;
   margin: auto;
   flex-wrap: wrap;
+}
+#equipo, #trabajo{
+  background: url(img/about.jpg);
+  background-position: center;
+  background-size: COVER;
+  padding-top: 250px;
 }
 .caja-servicios{
   width: 30%;
@@ -381,10 +395,15 @@ footer{
   background-position: center;
   background-size: cover;
   background-size: 100%;
-text-shadow:2px 2px 2px #dc143c;
-color: #fff;
+text-shadow:2px 2px 2px #dc143c !important;
+color: #fff !important;
 }
-
+.contenedor > .titulos-uno, p.after{
+  color: #cef;
+}
+.equipo-texto{
+  color:#dc143c!important;
+}
 .marca-logo{
   width: 40%;
   margin: auto;
@@ -430,7 +449,14 @@ footer p{
     width: 0;
     overflow: hidden;
   }
-
+  #equipo, #trabajo{
+    background: url(img/about_min.jpg) 0.5;
+    background-position: center;
+    background-size: COVER;
+    opacity: 0.5;
+    padding-top: 200px;
+    
+  }
   .enlaces a{
     display: block;
     width: 100%;
@@ -441,8 +467,12 @@ footer p{
     color:#fff;
   }
 
-  .textos>h1{font-size: 70px;}
-  .textos>h2{font-size:35px;}
+  .textos>h1{font-size: 70px;
+    font-family: "Allura", belleza;
+  }
+  .textos>h2{font-size:35px;
+    font-family: "Allura", belleza;
+  }
 
   .content-card{
     width: 48%;
@@ -491,7 +521,12 @@ footer p{
   .content-card{
     width: 90%;
   }
-
+  #equipo, #trabajo{
+    background: url(about_min.jpg);
+    background-position: center;
+    background-size: COVER;
+    padding-top: 50px !important;
+  }
   .caja-servicios{
     width: 90%;
     margin-bottom: var(--margenes);
