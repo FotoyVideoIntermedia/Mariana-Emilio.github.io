@@ -450,10 +450,9 @@ footer p{
     overflow: hidden;
   }
   #equipo, #trabajo{
-    background: url(img/about_min.jpg) 0.5;
+    background: url(img/about_min.jpg);
     background-position: center;
     background-size: COVER;
-    opacity: 0.5;
     padding-top: 200px;
     
   }
@@ -524,7 +523,7 @@ footer p{
   #equipo, #trabajo{
     background: url(about_min.jpg);
     background-position: center;
-    background-size: COVER;
+    background-size: cover;
     padding-top: 50px !important;
   }
   .caja-servicios{
