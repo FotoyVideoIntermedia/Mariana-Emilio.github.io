@@ -15,16 +15,16 @@ AlexCG Design, Thank you, I hope this template helps you -->
 <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-<body class="hidden" onclick="Playaudio()">
-    <div class="centrado" id="onload" >
-        <div class="lds-facebook"><div></div><div></div><div></div></div>
-    </div>
-    <audio id="musicaplay" loop>
+<body class="hidden" >
+    <audio id="musicaplay" loop >
         <source src="audio/audio.mp3" type="audio/mpeg">
         <source src="audio/audio.ogg" type="audio/ogg">
     </audio>
     </audio>
+  
     <header>
+      
+        <input type="image" src="img/iconplay.png" alt="Play" width="90" height="48" onclick="Playaudio()">
         <div class="portadafull">
             <h1 class="titulos-uno" id="nombre-novios">Mariana & Emilio</h1>
             <h2 class="titulos-uno" id="titulo-fecha">Guarda esta Fecha</h2>
@@ -110,7 +110,7 @@ AlexCG Design, Thank you, I hope this template helps you -->
     <script src="js/Countdown.js"></script>
     <script>
         function Playaudio(){
-            document.getElementById("musicaplay").play();
+           document.getElementById("musicaplay").play();
 
         }
     </script>

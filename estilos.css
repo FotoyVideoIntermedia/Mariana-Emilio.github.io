@@ -447,6 +447,10 @@ footer p{
   #equipo, #trabajo{
     background: url(fondo_verical.jpg);
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+ 
     background-position: center;
     background-size: cover;
     padding-top: 250px;
@@ -512,7 +516,28 @@ footer p{
   :root{
     --espacios-contenido: 25px;
   }
-
+  body{
+    background-image: url(img/fondo_body.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;  
+  -webkit-background-attachment: fixed;  
+  }
+  header {
+    background-image:#fff url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-position: initial;
+    -webkit-background-position: initial;
+    background-size: contain;
+    -webkit-background-size:contain;
+    height: 900px;
+  }
+  .portadafull {
+   padding-top: 10px;
+}
   .content-card{
     width: 90%;
   }
@@ -567,6 +592,15 @@ margin: 15px auto;
       background-position: center;
       background-size: cover;
       padding-top: 250px;
+    }
+    .Playmusic{
+      background-image: url(img/iconplay.png);
+      width: 40px;
+      height: 20px;
+      position: fixed;
+      z-index: 2000;
+    bottom: 10px;
+    margin-right: 50px;
     }
 }
 a.linkmaps{
