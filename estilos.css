@@ -450,9 +450,9 @@ footer p{
     -webkit-background-attachment: fixed;
     background-position: center;
     background-size: cover;
- 
+    -webkit-background-size: cover;
     background-position: center;
-    background-size: cover;
+    -webkit-background-position: center;
     padding-top: 250px;
   }
   .enlaces a{
@@ -529,12 +529,18 @@ footer p{
     -webkit-background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
-    background-position: initial;
-    -webkit-background-position: initial;
+    background-position: bottom;
+    -webkit-background-position: bottom;
     background-size: contain;
     -webkit-background-size:contain;
     height: 900px;
   }
+  
+
+#nombre-novios{
+  padding-top: 40px;
+  font-size: 40px;
+}
   .portadafull {
    padding-top: 10px;
 }
@@ -565,16 +571,34 @@ footer p{
    
     margin: 20px;
   }
-  .simply-section, .simply-amount {
-display: block;
-margin: 15px auto;
-  }
+  .simply-section, .fechab {
+    background: #fff;
+    width: 80px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: flex;
+    -webkit-display: flex;
+    align-items: center;
+    justify-content: center;
+    position: bottom;
+}
+.simply-amount {
+  margin: 5px auto;
+  display: flex;
+  font-size: 20px;
+  font-weight: 150;
+  text-align: center;
+  justify-content: center;
+}
   #cuenta{
     position: relative;
-    display: block;
+    display: flex;
     text-align: center;
     align-content: center;
     align-items: center;
+    margin: 0px auto;
     }
     .centrado-fecha2{
       position: relative;
@@ -588,9 +612,14 @@ margin: 15px auto;
     }
     #equipo, #trabajo{
       background: url(img/fondo_verical.jpg);
+      background-repeat: no-repeat;
+      -webkit-background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
+      -webkit-background-attachment: fixed;
+      background-position: initial;
+      -webkit-background-position: initial;
+      background-size: contain;
+      -webkit-background-size:contain;
       padding-top: 250px;
     }
     .Playmusic{
