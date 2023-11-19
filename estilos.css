@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@font-face {
+  font-family:'josephsophia';
+  src: url('fonts/josephsophia.ttf');
+}
+
 :root{
   --color1: rgb(219,144,.5);
   --color2: rgba(23, 180, 83, 0.877);
@@ -75,11 +81,6 @@ text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.47);
   margin-top: 60px;
 }
 
-
-
-img{
-  vertical-align: top;
-}
 /* cuenta regresiva */
 #cuenta{
   position: absolute;
@@ -152,19 +153,6 @@ font-weight: 700;
 .lds-facebook div:nth-child(3) {
   left: 45px;
   animation-delay: 0;
-}
-
-@keyframes lds-facebook {
-  0% {
-    top: 6px;
-    height: 51px;
-  }
-
-  50%,
-  100% {
-    top: 19px;
-    height: 26px;
-  }
 }
 
 /* Header */
@@ -303,13 +291,14 @@ color: #1900ff;
   margin: auto;
   flex-wrap: wrap;
 }
-#equipo, #trabajo{
+#nombre-completo, #trabajo{
   background: url(img/about.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   padding-top: 250px;
 }
+
 .caja-servicios{
   width: 30%;
   margin: auto;
@@ -444,7 +433,7 @@ footer p{
     width: 0;
     overflow: hidden;
   }
-  #equipo, #trabajo{
+  #nombre-completo, #trabajo{
     background: url(fondo_verical.jpg);
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
@@ -521,7 +510,7 @@ footer p{
   background-size: cover;
   -webkit-background-size: cover;
   background-attachment: fixed;  
-  -webkit-background-attachment: fixed;  
+  -webkit-background-attachment: fixed;
   }
   header {
     background-image:#fff url(img/fondo.jpg);
@@ -531,15 +520,22 @@ footer p{
     -webkit-background-attachment: fixed;
     background-position: bottom;
     -webkit-background-position: bottom;
-    background-size: contain;
-    -webkit-background-size:contain;
-    height: 900px;
+    background-size: cover;
+    -webkit-background-size:cover;
+    height: 100vh;
   }
   
-
 #nombre-novios{
   padding-top: 40px;
-  font-size: 40px;
+  font-size: 30px;
+  color: #fff !important;
+  text-shadow:2px 2px 2px rgb(252, 60, 1);
+ }
+#titulo-fecha{
+  font-size: 20px;
+  color: #fff !important;
+  text-shadow:2px 2px 2px rgb(252, 60, 1);
+  font-family: "Allura";
 }
   .portadafull {
    padding-top: 10px;
@@ -573,24 +569,29 @@ footer p{
   }
   .simply-section, .fechab {
     background: #fff;
-    width: 80px;
+    width: 85px;
     height: 60px;
-    margin: 10px auto;
+    margin: 8px auto;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     display: flex;
     -webkit-display: flex;
     align-items: center;
     justify-content: center;
-    position: bottom;
+    position: center;
+    color: darkred;
+    font-family: "Allura";
 }
 .simply-amount {
-  margin: 5px auto;
+  margin: 4px auto;
   display: flex;
   font-size: 20px;
-  font-weight: 150;
+  font-weight: 100;
   text-align: center;
   justify-content: center;
+  color: darkred;
+  text-shadow: 2p 2px 2px #000;
+  -webkit-text-shadow: 2p 2px 2px #ff7f50;
 }
   #cuenta{
     position: relative;
@@ -608,26 +609,56 @@ footer p{
       display: block;
       justify-content: center;
       align-items: center;
-      margin-top: 60px;
+      margin-top: 40px;
     }
-    #equipo, #trabajo{
+    #nombre-completo, #trabajo{
       background: url(img/fondo_verical.jpg);
       background-repeat: no-repeat;
       -webkit-background-repeat: no-repeat;
-      background-attachment: fixed;
-      -webkit-background-attachment: fixed;
       background-position: initial;
       -webkit-background-position: initial;
-      background-size: contain;
-      -webkit-background-size:contain;
-      padding-top: 250px;
+      background-size: cover;
+      -webkit-background-size:cover;
+      background-position: center;
+      -webkit-background-position: center;
+      padding-top: 130px;
+      height: 100vh;
     }
+ 
     .Playmusic{
        position: fixed !important;
       z-index: 2000;
     top: 10px;
     margin-right: 50px;
     }
+    .solo-faltan{
+      color: #fff !important;
+      text-shadow:2px 2px 2px rgb(252, 60, 1);
+    }
+   
+    .contenedor p, .equipo-texto{
+      width: 70%;
+      margin: 0px auto;
+      font-family: 'Pattaya', sans-serif;
+      font-size: 20px;
+      font-weight: 100;
+      color:darkred !important;
+    }
+    .nombre-completo{
+      font-family: 'josephsophia' !important;
+      font-size: 30px !important;
+      color: #dc143c !important;
+        }
+        .nombre-completo h3, h2 {
+          font-family: "Allura", belleza;
+          color:#fff !important;
+          text-shadow: 2px 2px 2px #dc143c;
+      }
+        .contenedor-pie{
+          justify-content: center;
+          text-align: center;
+        }
+
 }
 a.linkmaps{
   margin: 10px auto;
@@ -636,9 +667,9 @@ a.linkmaps{
   padding: 10px;
   text-align: center;
   font-size: 20px;
-  background: #fceb01;
-  color: #fff;
-  text-shadow: 2px 2px 2px #dc143c;
+  background: #dc143c;
+  color:#fff;
+  text-shadow: 2px 2px 2px #ff7f50;
   border-radius: 10px;
   text-decoration: none;
   display: block;
