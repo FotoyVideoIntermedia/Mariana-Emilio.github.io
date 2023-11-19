@@ -701,7 +701,7 @@ footer p{
     align-items: center;
     justify-content: center;
     position: center;
-    color: darkred;
+    color: darkred !important;
     font-family: "Allura";
 }
 .simply-amount {
@@ -745,6 +745,30 @@ footer p{
       -webkit-background-position: center;
       padding-top: 130px;
       height: 100vh;
+    }
+    .about{
+      background: url(img/img2.jpg);
+      background-repeat: no-repeat;
+      -webkit-background-repeat: no-repeat;
+      background-position: initial;
+      -webkit-background-position: initial;
+      background-size: cover;
+      -webkit-background-size:cover;
+      background-position: center;
+      -webkit-background-position: center;
+      height: 800px;
+      min-height: 800px;
+    }
+    footer{
+      background:url(img/fondo_fotter.jpg);
+      background-repeat: no-repeat;
+      -webkit-background-repeat: no-repeat;
+      background-position: initial;
+      -webkit-background-position: initial;
+      background-size: cover;
+      -webkit-background-size:cover;
+      background-position: center;
+      -webkit-background-position: center;
     }
  
     .Playmusic{
