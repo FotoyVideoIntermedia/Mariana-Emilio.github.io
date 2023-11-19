@@ -414,25 +414,27 @@ footer p{
 }
 
 @media screen and (max-width: 700px){
-  .nav2{
-    color: #fff;
+  body{
+    background-image: url(img/fondo_body.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;  
+  -webkit-background-attachment: fixed;
   }
+  header {
+    background-image:#fff url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-position: bottom;
+    -webkit-background-position: bottom;
+    background-size: cover;
+    -webkit-background-size:cover;
+    height: 100vh;
+  }
+  
 
-  .icono{
-    display:block;
-    cursor: pointer;
-  }
-
-  .enlaces{
-    position: fixed;
-    top:80px;
-    background: #2c3e50;
-    left: 0;
-    height: 100%;
-    transition: 1s;
-    width: 0;
-    overflow: hidden;
-  }
   #nombre-completo, #trabajo{
     background: url(fondo_verical.jpg);
     background-attachment: fixed;
@@ -444,6 +446,22 @@ footer p{
     -webkit-background-position: center;
     padding-top: 250px;
   }
+  #nombre-novios{
+    padding-top: 40px;
+    font-size: 30px;
+    color: #fff !important;
+    text-shadow:2px 2px 2px rgb(252, 60, 1);
+   }
+  #titulo-fecha{
+    font-size: 20px;
+    color: #fff !important;
+    text-shadow:2px 2px 2px rgb(252, 60, 1);
+    font-family: "Allura";
+  }
+    .portadafull {
+     padding-top: 10px;
+  }
+
   .enlaces a{
     display: block;
     width: 100%;
@@ -499,7 +517,111 @@ footer p{
     
       margin: 15px auto;
         }
-}
+        a.linkmaps{
+          margin: 10px auto;
+          width: 150px !important;
+          height: 50px !important;
+          padding: 10px;
+          text-align: center;
+          font-size: 20px;
+          background: #dc143c;
+          color:#fff;
+          text-shadow: 2px 2px 2px #ff7f50;
+          border-radius: 10px;
+          text-decoration: none;
+          display: block;
+        }
+        .simply-section, .fechab {
+          background: #fff;
+          width: 85px;
+          height: 60px;
+          margin: 8px auto;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          display: flex;
+          -webkit-display: flex;
+          align-items: center;
+          justify-content: center;
+          position: center;
+          color: darkred;
+          font-family: "Allura";
+      }
+      .simply-amount {
+        margin: 4px auto;
+        display: flex;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        justify-content: center;
+        color: darkred;
+        text-shadow: 2p 2px 2px #000;
+        -webkit-text-shadow: 2p 2px 2px #ff7f50;
+      }
+        #cuenta{
+          position: relative;
+          display: flex;
+          text-align: center;
+          align-content: center;
+          align-items: center;
+          margin: 0px auto;
+          }
+          .centrado-fecha2{
+            position: relative;
+            color: coral !important;
+            width: 100%;
+            z-index: 100;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+          }
+          #nombre-completo, #trabajo{
+            background: url(img/fondo_verical.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-repeat: no-repeat;
+            background-position: initial;
+            -webkit-background-position: initial;
+            background-size: cover;
+            -webkit-background-size:cover;
+            background-position: center;
+            -webkit-background-position: center;
+            padding-top: 130px;
+            height: 100vh;
+          }
+       
+          .Playmusic{
+             position: fixed !important;
+            z-index: 2000;
+          top: 10px;
+          margin-right: 50px;
+          }
+          .solo-faltan{
+            color: #fff !important;
+            text-shadow:2px 2px 2px rgb(252, 60, 1);
+          }
+         
+          .contenedor p, .equipo-texto{
+            width: 70%;
+            margin: 0px auto;
+            font-family: 'Pattaya', sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            color:darkred !important;
+          }
+          .nombre-completo{
+            font-family: 'josephsophia' !important;
+            font-size: 30px !important;
+            color: #dc143c !important;
+              }
+              .nombre-completo h3, h2 {
+                font-family: "Allura", belleza;
+                color:#fff !important;
+                text-shadow: 2px 2px 2px #dc143c;
+            }
+              .contenedor-pie{
+                justify-content: center;
+                text-align: center;
+              }
 
 @media screen and (max-width: 500px){
   :root{
@@ -676,7 +798,8 @@ a.linkmaps{
 }
 .google-maps
 {
-  width: 100%;
+  width: 90%;
   height: 500px;
   max-height: 500px;
+  margin: 0px auto;
 }
