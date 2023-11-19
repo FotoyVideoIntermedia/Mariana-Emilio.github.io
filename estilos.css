@@ -622,6 +622,7 @@ footer p{
                 justify-content: center;
                 text-align: center;
               }
+            }
 
 @media screen and (max-width: 500px){
   :root{
@@ -749,6 +750,8 @@ footer p{
     .about{
       background: url(img/img2.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
+      -webkit-background-attachment: fixed;
       -webkit-background-repeat: no-repeat;
       background-position: initial;
       -webkit-background-position: initial;
@@ -804,6 +807,12 @@ footer p{
           justify-content: center;
           text-align: center;
         }
+        .titulos-datos{
+         font-family: 'josephsophia' !important;
+          font-size: 30px !important;
+          color: #008078 !important;
+          text-shadow: 2px2px 2px #00ffff !important;
+        }
 
 }
 a.linkmaps{
@@ -820,8 +829,7 @@ a.linkmaps{
   text-decoration: none;
   display: block;
 }
-.google-maps
-{
+.google-maps{
   width: 90%;
   height: 500px;
   max-height: 500px;
